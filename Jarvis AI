@@ -4,3 +4,7 @@ flutter build apk --dart-define=OPENAI_MODEL=gpt-4o-miniflutter run --dart-defin
   'OPENAI_MODEL',
   defaultValue: 'gpt-4o-mini',
 );
+const String openAIModel = String.fromEnvironment(
+  'OPENAI_MODEL',
+  defaultValue: 'gpt-4o-mini',
+);flutter run --dart-define=OPENAI_MODEL=gpt-4o-miniflutter build apk --dart-define=OPENAI_MODEL=gpt-4o-mini
