@@ -1,2 +1,6 @@
 # jarvis-ai
 JARVIS AI – A futuristic bilingual personal AI assistant for Android with voice and text chat, Owner Mode, online and offline features, and an Anime &amp; Manga Studio.
+flutter build apk --dart-define=OPENAI_MODEL=gpt-4o-miniflutter run --dart-define=OPENAI_MODEL=gpt-4o-miniconst String openAIModel = String.fromEnvironment(
+  'OPENAI_MODEL',
+  defaultValue: 'gpt-4o-mini',
+);
